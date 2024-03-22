@@ -1,0 +1,317 @@
+/* 
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+*/
+ /* common css*/
+body{
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+/* common css End */
+
+/* Nav Section Css Start */
+#nav{
+    background-color: #02918c;
+    
+}
+
+
+#nav .container{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav li a{
+    font-size: 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    font-weight: 800;
+    display: inline-block;
+    transition: .4s;
+}
+#nav li a:hover{
+    background-color: rgb(209, 151, 42);
+
+}
+/* Nav Section Css End */
+
+/* Banner section css start */
+#banner{
+   
+    height: 728px;
+    color: #ffffff;
+    display: flex;
+    background-size: 100% 100%;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+#banner::before{
+    content: '';
+    position: absolute;
+    inset: 0;   
+    background-color: rgba(0,0,0,0.55);
+    z-index: -1;
+   
+
+}
+#banner h3{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    display: inline-block;
+   
+}
+#banner h1{
+    font-size: 68px;
+    line-height: 75px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 18px;
+    display: inline-block;
+ 
+}
+#banner p{
+    font-size: 18px;
+    line-height: 64px;
+    font-weight: 400;
+    }
+
+#banner img{
+        font-size: 18px;
+        line-height: 33px;
+        display: block;
+        margin: auto;
+        margin-bottom: 35px;
+
+}
+#banner a{
+    font-size: 18px;
+    background-color: #cfc91d;
+    color: rgb(0, 0, 0);
+    line-height: 33px;
+    padding: 15px;
+}
+#banner a:hover{
+    background-color: rgb(14, 122, 172);
+    transition: .8s;
+}
+.text-center{
+    text-align: center;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+/* Banner section css start end */
+
+
+/* about section css start */
+.section_info {
+    padding: 0 120px;
+}
+.section_info p{
+    margin-bottom: 30px;
+}
+
+.section_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+.section_info p{
+    font-size: 16px;
+    color:#7e8287;
+    line-height: 41px;
+}
+.section_info p b{
+    font-size: 23px;
+
+}
+
+.about_card{
+    
+    border-right: 1px solid black;
+    padding: 0 20px;
+   
+}
+.about_card:last-child{
+    border-right: none;
+}
+.row{
+    display: flex;
+   
+}
+
+
+/* about section css end */
+
+/* service section start */
+
+
+#service{
+    background-image: url(./../img/laptop_bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    /* height: 729px; */
+    align-items: center;
+
+    
+}
+
+
+.service_info{
+    width: 455px;
+    padding-bottom: 60px;
+}
+#service.service_card{
+    width: 164px;
+    padding-bottom: 60px;
+}
+
+.service_card h3{
+    margin: 19px 0;
+    font-size: 16px;
+}
+.sercice_card p{
+    font-size: 11px;
+    line-height: 21px;
+}
+.service_info h2{
+    color: #02918c;
+    text-transform: uppercase;
+    font-size:46px;
+    font-weight: 800;
+    padding-top: 71px;
+}
+#service .design{
+    padding: 36px 0;
+}
+#service .row{
+    width: 485px;
+    padding-bottom: 90px;
+    /* display: inline-block; */
+}
+/* service section end */
+
+
+/* my work start */
+
+
+.work_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+.work_info p{
+    font-size: 16px;
+    line-height: 41px;
+    margin-bottom: 50px;
+
+}
+
+
+
+/* my work end */
+/* img area start */
+.work_card{
+        width: 25%;
+        position: relative;
+      
+}
+.work_card img{
+    width: 100%;
+    display: block;
+    
+}
+.overley p{
+    font-size: 13px;
+    line-height: 21px;
+    padding: 0 10px;
+}
+.work_card .overley{
+    position: absolute;
+    background-color: #02918cbb;
+    inset: 20px 28px;
+    text-align: center;
+    padding-top: 10px;
+    color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 50px;
+    transition: 0.4s;
+   
+}
+
+.work_card:hover .overley{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 0;
+}
+/* img area end */
+
+/* contact me area start */
+.contact_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+}
+.contact_info p{
+    font-size: 16px;
+    line-height: 41px;
+}
+/* contact me area end */
+
+
+
+/* finishing area start */
+#container{
+   text-align: center;
+   background-color: black;
+    padding: 20px 0;
+}
+.finish_info{
+    color: #ffffff;
+}
+.finish_info a{
+    font-size: 18px;
+    background-color: #cfc91d;
+    color: rgb(0, 0, 0);
+    line-height: 33px;
+    padding: 10px;
+   
+}
+.finish_info a:hover{
+    transition: 0.4s;
+    background-color: dodgerblue;
+    
+}
+/* finishing area end */
